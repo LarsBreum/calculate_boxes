@@ -3,7 +3,7 @@ var box2A;
 var inA;
 //brugerens input (det sanne sin dit print)
 var boxCorner = [5,20,14,25,12,23,5,17];
-var area = prompt("Choose a box");
+var area = prompt("Choose a box").toLowercase();
 
 //finder værdierne til boxCorner
 x1 = boxCorner[0];
@@ -36,18 +36,18 @@ function intersectionA () {
 function boxArea() {
 	var A;
 	//hvis area har samme værdi som "Box1"
-	if (area == "Box1") {
+	if (area == "box1") {
 		//Sæt = resultatet af functionen box1A();
 		A = box1A();
 	//ellers hvis (samme som elif i python) area == "box2"
-	} else if (area == "Box2") {
+	} else if (area == "box2") {
 	//Samme princip som ovenfor
 		A = box2A();
 		//samme som over
-	} else if (area == "Intersection") {
+	} else if (area == "intersection") {
 		//samme som over
 		A = intersectionA();
-	} else if (area == "Union") {
+	} else if (area == "union") {
 		A = box1A() + box2A() - intersectionA();
 	}
 	//samme som "return A" i python
