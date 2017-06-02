@@ -3,7 +3,7 @@ var box2A;
 var inA;
 //brugerens input (det sanne sin dit print)
 var boxCorner = [5,20,14,25,12,23,5,17];
-var area = prompt("Choose a box");
+var area = prompt("Vælg box1, box2, intersection eller union");
 area = area.toLowerCase();
 
 //finder værdierne til boxCorner
@@ -52,7 +52,7 @@ function boxArea() {
 		A = box1A() + box2A() - intersectionA();
 	}
 	//samme som "return A" i python
-	document.write(A);
+	document.getElementById("p").innerHTML = "Du har valgt " + area + " Den har et areal på: " + A;
 }
 
 //kører programmet (det er samme som når du kører programmet i konsollen)
