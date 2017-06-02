@@ -3,7 +3,8 @@ var box2A;
 var inA;
 //brugerens input (det sanne sin dit print)
 var boxCorner = [5,20,14,25,12,23,5,17];
-var area = prompt("Choose a box").toLowercase();
+var area = prompt("Choose a box");
+area = area.toLowerCase();
 
 //finder værdierne til boxCorner
 x1 = boxCorner[0];
