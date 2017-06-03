@@ -52,7 +52,8 @@ function boxArea() {
 		A = box1A() + box2A() - intersectionA();
 	}
 	//samme som "return A" i python
-	document.getElementById("p").innerHTML = "Du har valgt " + area + " Den har et areal på: " + A;
+	document.getElementById("p").innerHTML = "Du har valgt " 
+	+ area + " Den har et areal på: " + A;
 }
 
 //kører programmet (det er samme som når du kører programmet i konsollen)
